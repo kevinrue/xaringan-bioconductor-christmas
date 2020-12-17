@@ -3,6 +3,40 @@ title: "Untitled"
 output: html_document
 ---
 
+<div class="snowflakes" aria-hidden="true">
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❆
+  </div>
+  <div class="snowflake">
+  ❄
+  </div>
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❆
+  </div>
+  <div class="snowflake">
+  ❄
+  </div>
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❆
+  </div>
+  <div class="snowflake">
+  ❄
+  </div>
+</div>
+
+
 ```{css echo = FALSE}
 /*Source: https://codepen.io/codeconvey/pen/xRzQay*/
   
@@ -27,7 +61,7 @@ output: html_document
    50%{transform:translateX(80px)}
   100%{transform:translateX(0px)}}
 
-.title-slide .snowflake{
+.snowflake{
   position:fixed;
   top:-10%;
   z-index:9999;

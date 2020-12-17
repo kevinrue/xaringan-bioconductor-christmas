@@ -2,42 +2,11 @@
 title: 'My Bioconductor Topic'
 subtitle: 'Bioconductor Meeting YEAR'
 author: '[Author One](https://author1.github.io), [Author Two](https://author2.github.io)'
-institute: |
-  <div class="snowflakes" aria-hidden="true">
-  <div class="snowflake">
-  ❅
-  </div>
-  <div class="snowflake">
-  ❅
-  </div>
-  <div class="snowflake">
-  ❆
-  </div>
-  <div class="snowflake">
-  ❄
-  </div>
-  <div class="snowflake">
-  ❅
-  </div>
-  <div class="snowflake">
-  ❆
-  </div>
-  <div class="snowflake">
-  ❄
-  </div>
-  <div class="snowflake">
-  ❅
-  </div>
-  <div class="snowflake">
-  ❆
-  </div>
-  <div class="snowflake">
-  ❄
-  </div>
-  </div>
+institute: 'Institute'
 date: 'YYYY-MM-DD (updated: `r Sys.Date()`)'
 output:
   xaringan::moon_reader:
+    seal: FALSE
     css: [default, metropolis, rladies-fonts, "my-theme.css"]
     lib_dir: libs
     nature:
@@ -46,6 +15,23 @@ output:
       countIncrementalSlides: false
 # uncomment this line to produce HTML and PDF in RStudio:
 # knit: pagedown::chrome_print
+---
+
+class: remark-slide-content center middle inverse title-slide hljs-github
+
+```{r child = "_snow.Rmd"}
+```
+
+# My Bioconductor Topic
+
+## Bioconductor Meeting YEAR
+
+### [Author One](https://author1.github.io), [Author Two](https://author2.github.io)
+
+### Institute
+
+### YYYY-MM-DD (updated: `r Sys.Date()`)
+
 ---
 
 layout: true
@@ -57,9 +43,6 @@ Footer left
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 Footer middle
 </span></div>
-
-```{r child = "_snow.Rmd"}
-```
 
 ```{r setup, include=FALSE}
 stopifnot(require(htmltools))
