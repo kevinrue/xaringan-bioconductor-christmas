@@ -2,7 +2,39 @@
 title: 'My Bioconductor Topic'
 subtitle: 'Bioconductor Meeting YEAR'
 author: '[Author One](https://author1.github.io), [Author Two](https://author2.github.io)'
-institute: ''
+institute: |
+  <div class="snowflakes" aria-hidden="true">
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❆
+  </div>
+  <div class="snowflake">
+  ❄
+  </div>
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❆
+  </div>
+  <div class="snowflake">
+  ❄
+  </div>
+  <div class="snowflake">
+  ❅
+  </div>
+  <div class="snowflake">
+  ❆
+  </div>
+  <div class="snowflake">
+  ❄
+  </div>
+  </div>
 date: 'YYYY-MM-DD (updated: `r Sys.Date()`)'
 output:
   xaringan::moon_reader:
@@ -25,6 +57,9 @@ Footer left
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 Footer middle
 </span></div>
+
+```{r child = "_snow.Rmd"}
+```
 
 ```{r setup, include=FALSE}
 stopifnot(require(htmltools))
